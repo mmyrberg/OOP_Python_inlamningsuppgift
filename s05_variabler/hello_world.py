@@ -3,3 +3,5 @@ variabel_hello
 och som innehåller strängen  
 'Hello world!'
 """
+variabel_hello = 'Hello World!'
+
