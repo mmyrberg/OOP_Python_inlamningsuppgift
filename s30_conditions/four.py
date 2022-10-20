@@ -25,3 +25,22 @@ Om argumentet var en sträng och hade värdet "Hej!"
 I övrigt om det är en sträng:
 "Det var en sträng"
  """
+
+def type_checking(arg):
+    if type(arg) == int and arg == 42:
+        return "Answer to the Ultimate Question of Life, the Universe, and Everything"
+    elif type(arg) == int:
+        return "Det var ett heltal"
+    elif type(arg) == float and arg < 0:
+        return "Var inte så negativ"
+    elif type(arg) == float:
+        return "Det var ett flyttal"
+    elif type(arg) == bool and arg == False:
+        return "Lögnare!"
+    elif type(arg) is bool and arg == True:
+        return "Det var en boolean"
+    elif type(arg) is str and arg == "Hej!":
+        return "Hej på dig!"
+    elif type(arg) == str:
+        return "Det var en sträng"
+    

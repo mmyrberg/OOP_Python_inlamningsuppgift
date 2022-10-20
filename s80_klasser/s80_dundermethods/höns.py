@@ -22,3 +22,20 @@ Tupp ska ärva utav Kyckling
 Tupp ska överlagra dunder metoden __str__ och returnera strängvärdet:
 "kukeliku"
   """
+
+class Ägg: 
+  def __str__(self):
+    return "krack"
+
+class Kyckling(Ägg):
+  def __str__(self):
+    return "tvi tvi"
+
+class Höna(Kyckling):
+  def __str__(self):
+    return "kack kack"
+
+class Tupp(Kyckling):
+  def __str__(self):
+    return "kukeliku"
+
